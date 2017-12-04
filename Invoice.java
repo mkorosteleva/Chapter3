@@ -1,5 +1,3 @@
-package chapter3;
-
 public class Invoice {
 	private String number;
 	private String description;
@@ -45,8 +43,8 @@ public double getPrice() {
 }
 
 public double getInvoiceAmount(){
-	double InvoiceAmount = price * qty;
-	return InvoiceAmount;
+	double invoiceAmount = price * qty;
+	return invoiceAmount;
 	
 }
 

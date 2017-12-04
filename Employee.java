@@ -1,10 +1,9 @@
-package chapter3;
-
 public class Employee {
 
 	private String firstName;
 	private String lastName;
 	private double monthlySalary;
+	private double bonus;
 
 	public Employee(String firstName, String lastName, double monthlySalary) {
 		this.firstName = firstName;
@@ -35,6 +34,11 @@ public class Employee {
 
 	public double getMonthlySalary() {
 		return monthlySalary;
+	}
+
+	public double getSalaryBonus() {
+		bonus = (monthlySalary * 12) + (monthlySalary * 12 * 0.1);
+		return bonus;
 	}
 
 }

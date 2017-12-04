@@ -1,5 +1,3 @@
-package chapter3;
-
 import java.util.Scanner;
 
 public class InvoiceTest {
@@ -30,8 +28,9 @@ public class InvoiceTest {
 
 		System.out.print("Enter Item Price: ");
 		price = input.nextDouble();
-		invoice.setPrice(price);
-
+		if (price > 0) {
+			invoice.setPrice(price);
+		}
 		System.out.printf("Invoice Amount %s", invoice.getInvoiceAmount());
 
 		input.close();

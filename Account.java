@@ -1,6 +1,3 @@
-package chapter3;
-
-
 public class Account {
 	private String name; // instance variable
 	private double balance; // instance variable
@@ -17,17 +14,19 @@ public class Account {
 
 	// method that deposits (adds) only a valid amount to the balance
 
-	public void deposit(double depositAmount) { 
-		if (depositAmount > 0.0) // if 	  the depositAmount is valid 
-	  balance = balance + depositAmount; // add it to 	  the balance 
-	  }
+	public void deposit(double depositAmount) {
+		if (depositAmount > 0.0) // if the depositAmount is valid
+			balance = balance + depositAmount; // add it to the balance
+	}
 
 	// withdrawal
 	public void withdrawal(double withdrawalAmount) {
-
-		if (withdrawalAmount < 0.0) {
+		if ((balance + withdrawalAmount) < 0.0) { // check that withdrawal does not exceed balance
+			System.out.println("Withdrawal amount exceeded account balance");
+		} else {
 
 			balance = balance + withdrawalAmount;
+
 		}
 	}
 
