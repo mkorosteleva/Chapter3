@@ -38,6 +38,7 @@ public class Invoice {
 	}
 
 	public int getQty() {
+		// returns quantity
 		return qty;
 	}
 
