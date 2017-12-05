@@ -5,13 +5,13 @@ public class Invoice {
 	private double price;
 
 	public Invoice(String number, String description, int qty, double price) {
-		this.number = number;
-		this.description = description;
+		setNumber(number);
+		setDescription(description);
 		if (qty > 0) {
-			this.qty = qty;
+			setQty(qty);
 		}
 		if (price > 0) {
-			this.price = price;
+			setPrice(price);
 		}
 	}
 
