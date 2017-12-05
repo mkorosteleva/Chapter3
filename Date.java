@@ -5,9 +5,9 @@ public class Date {
 
 	//constructor with params
 	public Date (int day, int month, int year){
-		this.day = day;
-		this.month = month;
-		this.year = year;
+		setDay(day);
+		setMonth(month);
+		setYear(year);
 	}
 	
 	public void setDay (int day){
